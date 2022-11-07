@@ -1,57 +1,82 @@
 export default [
   {
     id: 'midudev.midu.dev',
+    question: "How to learn English?",
     fullName: 'midudev/midu.dev',
+    typeQuestion: 'Deep Path',
+    price: 'Free',
     description: 'Blog de noticias sobre desarrollo',
-    language: 'HTML',
+    hashtags: ['#english', '#languages'],
     forksCount: 3123,
     stargazersCount: 52869,
     ratingAverage: 0,
-    reviewCount: 0,
-    ownerAvatarUrl: 'https://avatars.githubusercontent.com/u/1561955?v=4'
+    votesCount: 2,
+    views: 323,
+    ownerAvatarUrl: 'https://avatars.githubusercontent.com/u/1561955?v=4',
+    answers: 10
   },
   {
     id: 'jaredpalmer.formik',
     fullName: 'jaredpalmer/formik',
+    typeQuestion: 'Deep Path',
+    price: '<20$',
+    question: "How to handstand?",
     description: 'Build forms in React, without the tears',
-    language: 'TypeScript',
+    hashtags: ['#handstand', '#sports', '#nature', 'calisthenics'],
     forksCount: 1589,
     stargazersCount: 21553,
     ratingAverage: 88,
-    reviewCount: 4,
-    ownerAvatarUrl: 'https://avatars2.githubusercontent.com/u/4060187?v=4'
+    votesCount: 4,
+    ownerAvatarUrl: 'https://avatars2.githubusercontent.com/u/4060187?v=4',
+    views: 300,
+    answers: 10
   },
   {
     id: 'rails.rails',
     fullName: 'rails/rails',
+    question: "How to learn Python?",
+    typeQuestion: 'Fast Path',
+    price: 'Free',
     description: 'Ruby on Rails',
-    language: 'Ruby',
+    hashtags: ['#python', '#programming'],
     forksCount: 18349,
     stargazersCount: 45377,
     ratingAverage: 100,
-    reviewCount: 2,
-    ownerAvatarUrl: 'https://avatars1.githubusercontent.com/u/4223?v=4'
+    votesCount: 2,
+    ownerAvatarUrl: 'https://avatars1.githubusercontent.com/u/4223?v=4',
+    views: 300,
+    answers: 10
   },
   {
     id: 'django.django',
     fullName: 'django/django',
+    question: 'How do you start climbing?',
+    typeQuestion: 'Average Path',
+    price: '50-300$',
     description: 'The Web framework for perfectionists with deadlines.',
-    language: 'Python',
+    hashtags: ['#sports', 'climb'],
     forksCount: 21015,
     stargazersCount: 48496,
     ratingAverage: 73,
-    reviewCount: 5,
-    ownerAvatarUrl: 'https://avatars2.githubusercontent.com/u/27804?v=4'
+    votesCount: 5,
+    ownerAvatarUrl: 'https://avatars2.githubusercontent.com/u/27804?v=4',
+    views: 300,
+    answers: 10
   },
   {
     id: 'reduxjs.redux',
     fullName: 'reduxjs/redux',
+    question: 'How to learn anything?',
+    typeQuestion: 'Deep Path',
+    price: '300-5000$',
     description: 'Predictable state container for JavaScript apps',
-    language: 'TypeScript',
+    hashtags: ['#TypeScript'],
     forksCount: 13902,
     stargazersCount: 52869,
     ratingAverage: 0,
-    reviewCount: 0,
-    ownerAvatarUrl: 'https://avatars3.githubusercontent.com/u/13142323?v=4'
+    votesCount: 0,
+    ownerAvatarUrl: 'https://avatars3.githubusercontent.com/u/13142323?v=4',
+    views: 300,
+    answers: 10
   }
 ]

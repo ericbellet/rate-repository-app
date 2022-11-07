@@ -16,16 +16,16 @@ const RepositoryStats = props => {
         <StyledText align='center'>Stars</StyledText>
       </View>
       <View>
-        <StyledText align='center' fontWeight='bold'>{parseThousands(props.forksCount)}</StyledText>
-        <StyledText align='center'>Forks</StyledText>
+        <StyledText align='center' fontWeight='bold'>{props.votesCount}</StyledText>
+        <StyledText align='center'>Votes</StyledText>
       </View>
       <View>
-        <StyledText align='center' fontWeight='bold'>{props.reviewCount}</StyledText>
-        <StyledText align='center'>Review</StyledText>
+        <StyledText align='center' fontWeight='bold'>{props.views}</StyledText>
+        <StyledText align='center'>Views</StyledText>
       </View>
       <View>
-        <StyledText align='center' fontWeight='bold'>{props.ratingAverage}</StyledText>
-        <StyledText align='center'>Rating</StyledText>
+        <StyledText align='center' fontWeight='bold'>{props.answers}</StyledText>
+        <StyledText align='center'>Answers</StyledText>
       </View>
     </View>
   )
