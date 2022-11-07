@@ -11,10 +11,8 @@ const RepositoryItemHeader = ({ ownerAvatarUrl, question, description, hashtags,
       <StyledText fontWeight='bold' fontSize='heading'>{question}</StyledText>
       <View style={{flexDirection: 'row', paddingBottom: 2, justifyContent: 'flex-start' }}>
         <StyledText style={styles.typeQuestion}>{typeQuestion}</StyledText>
-        <StyledText style={styles.typeQuestion}>{typeQuestion}</StyledText>
-
         <StyledText style={styles.price}>{price}</StyledText>
-      </View>∫
+      </View>
       <View style={{flexDirection: 'row', paddingBottom: 2, justifyContent: 'flex-start'}}>
         <HashItem {...hashtags}/>
       </View>
