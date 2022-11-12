@@ -18,13 +18,13 @@ export default function LandingScreen({ navigation }) {
           <FontAwesome5.Button name="google"
               style={{
                 backgroundColor: 'red'}}
-            onPress={() => this.googleLogIn()}>
+            onPress={() => console.log('To Do')}>
             <Text style={styles.login}>Log in with Google</Text>
           </FontAwesome5.Button>
           <Text></Text>
           <FontAwesome5.Button style={styles.facebookButton} 
             name="facebook" 
-            onPress={() => this.facebookLogIn()}>
+            onPress={() => console.log('To Do')}>
             <Text style={styles.login}>Log in with Facebook</Text>
           </FontAwesome5.Button>
           <Text></Text>
