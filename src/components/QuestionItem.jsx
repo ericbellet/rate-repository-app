@@ -1,11 +1,11 @@
 import React from 'react'
 import { Image, View, StyleSheet, FlatList } from 'react-native'
 import StyledText from './StyledText.jsx'
-import RepositoryStats from './RepositoryStats.jsx'
+import QuestionStats from './QuestionStats.jsx'
 import UserInfo from './InfoUser.jsx'
 import theme from '../theme.js'
 
-const RepositoryItemHeader = ({ ownerAvatarUrl, question, description, hashtags, typeQuestion, price }) => (
+const QuestionItemHeader = ({ ownerAvatarUrl, question, description, hashtags, typeQuestion, price }) => (
   <View style={{ flexDirection: 'row', paddingBottom: 2 }}>
     <View style={{ flex: 1 }}>
       <StyledText fontWeight='bold' fontSize='heading'>{question}</StyledText>
@@ -39,10 +39,10 @@ const styleHash = StyleSheet.create({
   }
 });
 
-const RepositoryItem = (props) => (
+const QuestionItem = (props) => (
   <View key={props.id} style={styles.container}>
-    <RepositoryItemHeader {...props} />
-    <RepositoryStats {...props} />
+    <QuestionItemHeader {...props} />
+    <QuestionStats {...props} />
     <UserInfo {...props} />
   </View>
 )
@@ -98,4 +98,4 @@ const styles = StyleSheet.create({
   }
 })
 
-export default RepositoryItem
+export default QuestionItem

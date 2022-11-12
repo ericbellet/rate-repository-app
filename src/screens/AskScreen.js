@@ -4,6 +4,6 @@ import { View, Text } from "react-native";
 export default function QuestionScreen() {
 
   return <View>
-    <Text>Question</Text>
+    <Text>Ask Question</Text>
     </View>;
 }

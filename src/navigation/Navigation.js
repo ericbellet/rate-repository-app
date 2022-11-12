@@ -2,32 +2,34 @@ import React from "react";
 import { Image } from "react-native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Icon from "react-native-vector-icons/FontAwesome5";
-import QuestionNavigation from "./QuestionNavigation";
-import AnswersNavigation from "./AnswersNavigation";
+import AskNavigation from "./AskNavigation";
+import QuestionsNavigation from "./QuestionsNavigation";
 import AccountNavigation from "./AccountNavigation";
 
 const Tab = createBottomTabNavigator();
 
 export default function Navigation() {
   return (
-    <Tab.Navigator screenOptions={{ headerShown: false }} >
+    <Tab.Navigator initialRouteName="QuestionsScreen" screenOptions={{ headerShown: false 
+  }} >
       <Tab.Screen
-        name="QuestionScreen"
-        component={QuestionNavigation}
+        name="AskScreen"
+        component={AskNavigation}
         options={{
+          tabBarShowLabel: false,
           tabBarLabel: "Question",
           tabBarIcon: ({ color, size }) => (
-            <Icon name="heart" color={color} size={size} />
+            <Icon name="edit" color={color} size={size} />
           ),
         }}
       />
 
       <Tab.Screen
-        name="AnswersScreen"
-        component={AnswersNavigation}
+        name="QuestionsScreen"
+        component={QuestionsNavigation}
         options={{
-          tabBarVisible: false,
-          tabBarIcon: () => renderPokeball(),
+          tabBarShowLabel: false,
+          tabBarIcon: () => renderQuestionsButton(),
         }}
       />
 
@@ -35,7 +37,7 @@ export default function Navigation() {
         name="AccountScreen"
         component={AccountNavigation}
         options={{
-          tabBarVisible: false,
+          tabBarShowLabel: false,
           tabBarIcon: ({ color, size }) => (
             <Icon name="user" color={color} size={size} />
           ),
@@ -45,7 +47,7 @@ export default function Navigation() {
   );
 }
 
-function renderPokeball() {
+function renderQuestionsButton() {
   return (
     <Image
       source={require("../../assets/home-button.png")}

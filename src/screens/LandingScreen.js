@@ -1,7 +1,6 @@
 import React from "react";
 import { ImageBackground, TouchableOpacity, View, Text, TextInput, StyleSheet, Button } from "react-native";
 import { FontAwesome5 } from '@expo/vector-icons';
-import Main from '../components/Main'
 import { useNavigation } from '@react-navigation/native';
 
 

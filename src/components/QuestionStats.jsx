@@ -8,7 +8,7 @@ const parseThousands = value => {
     : String(value)
 }
 
-const RepositoryStats = props => {
+const QuestionStats = props => {
   return (
     <View style={{ flexDirection: 'row', justifyContent: 'space-around' }}>
       <View>
@@ -31,4 +31,4 @@ const RepositoryStats = props => {
   )
 }
 
-export default RepositoryStats
+export default QuestionStats

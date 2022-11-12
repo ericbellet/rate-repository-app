@@ -1,18 +1,18 @@
 import React from 'react'
 import { FlatList, Text } from 'react-native'
-import repositories from '../data/repositories.js'
-import RepositoryItem from './RepositoryItem.jsx'
+import repositories from '../data/questions.js'
+import QuestionItem from './QuestionItem.jsx'
 
-const RepositoryList = () => {
+const QuestionsList = () => {
   return (
     <FlatList
       data={repositories}
       ItemSeparatorComponent={() => <Text> </Text>}
       renderItem={({ item: repo }) => (
-        <RepositoryItem {...repo} />
+        <QuestionItem {...repo} />
       )}
     />
   )
 }
 
-export default RepositoryList
+export default QuestionsList

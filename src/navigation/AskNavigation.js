@@ -1,17 +1,18 @@
 import React from "react";
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import AnswersScreen from "../screens/AnswersScreen";
+
+import AskScreen from "../screens/AskScreen";
 
 const Stack = createNativeStackNavigator();
 
-export default function AnswersNavigation() {
+export default function AskNavigation() {
   return (
     <Stack.Navigator  screenOptions={{
-      headerShown: false}}>
+      headerShown: false
+    }}>
       <Stack.Screen
-        name="Answers"
-        component={AnswersScreen}
-        options={{ title: "Answers1" }}
+        name="Question"
+        component={AskScreen}
       />
     </Stack.Navigator>
   );
