@@ -9,9 +9,9 @@ export default function QuestionsNavigation() {
     <Stack.Navigator  screenOptions={{
       headerShown: false}}>
       <Stack.Screen
-        name="Answers"
+        name="Questions"
         component={QuestionsScreen}
-        options={{ title: "Answers1" }}
+        options={{ title: "QuestionsScreen" }}
       />
     </Stack.Navigator>
   );

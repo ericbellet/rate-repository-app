@@ -1,9 +1,32 @@
 import React from 'react'
-import { Image, View, StyleSheet, FlatList } from 'react-native'
+import { Image, View, StyleSheet, FlatList, TouchableWithoutFeedback } from 'react-native'
+import { useNavigation } from "@react-navigation/native";
 import StyledText from './StyledText.jsx'
 import QuestionStats from './QuestionStats.jsx'
 import UserInfo from './InfoUser.jsx'
 import theme from '../theme.js'
+
+
+export default function QuestionItem(props) {
+  const { question } = props;
+  const navigation = useNavigation();
+
+  const goToAnswers = () => {
+    console.log(question.question)
+    navigation.navigate('Answers', props={...question})
+  };
+
+  return (
+    <TouchableWithoutFeedback onPress={(goToAnswers)}>
+      <View key={question.id} style={styles.container}>
+        <QuestionItemHeader {...question} />
+        <QuestionStats {...question} />
+        <UserInfo {...question} />
+      </View>
+    </TouchableWithoutFeedback>
+
+  )
+}
 
 const QuestionItemHeader = ({ ownerAvatarUrl, question, description, hashtags, typeQuestion, price }) => (
   <View style={{ flexDirection: 'row', paddingBottom: 2 }}>
@@ -38,14 +61,6 @@ const styleHash = StyleSheet.create({
       justifyContent: "flex-start"
   }
 });
-
-const QuestionItem = (props) => (
-  <View key={props.id} style={styles.container}>
-    <QuestionItemHeader {...props} />
-    <QuestionStats {...props} />
-    <UserInfo {...props} />
-  </View>
-)
 
 const styles = StyleSheet.create({
   container: {
@@ -97,5 +112,3 @@ const styles = StyleSheet.create({
     overflow: 'hidden'
   }
 })
-
-export default QuestionItem
