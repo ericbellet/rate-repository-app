@@ -12,7 +12,6 @@ export default function QuestionItem(props) {
   const navigation = useNavigation();
 
   const goToAnswers = () => {
-    console.log(question.question)
     navigation.navigate('Answers', props={...question})
   };
 
@@ -34,6 +33,7 @@ const QuestionItemHeader = ({ ownerAvatarUrl, question, description, hashtags, t
       <StyledText fontWeight='bold' fontSize='heading'>{question}</StyledText>
       <View style={{flexDirection: 'row', paddingBottom: 2, justifyContent: 'flex-start' }}>
         <StyledText style={styles.typeQuestion}>{typeQuestion}</StyledText>
+        <StyledText>  </StyledText>
         <StyledText style={styles.price}>{price}</StyledText>
       </View>
       <View style={{flexDirection: 'row', paddingBottom: 2, justifyContent: 'flex-start'}}>

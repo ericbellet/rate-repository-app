@@ -13,7 +13,8 @@ export default [
     votesCount: 2,
     views: 323,
     ownerAvatarUrl: 'https://avatars.githubusercontent.com/u/1561955?v=4',
-    answers: 10
+    answers: 10,
+    creationDate: '2 years'
   },
   {
     id: 'jaredpalmer.formik',
@@ -29,7 +30,8 @@ export default [
     votesCount: 4,
     ownerAvatarUrl: 'https://avatars2.githubusercontent.com/u/4060187?v=4',
     views: 300,
-    answers: 10
+    answers: 10,
+    creationDate: '5 days'
   },
   {
     id: 'rails.rails',
@@ -45,7 +47,8 @@ export default [
     votesCount: 2,
     ownerAvatarUrl: 'https://avatars1.githubusercontent.com/u/4223?v=4',
     views: 300,
-    answers: 10
+    answers: 10,
+    creationDate: '7 hours'
   },
   {
     id: 'django.django',
@@ -61,7 +64,8 @@ export default [
     votesCount: 5,
     ownerAvatarUrl: 'https://avatars2.githubusercontent.com/u/27804?v=4',
     views: 300,
-    answers: 10
+    answers: 10,
+    creationDate: '2 days'
   },
   {
     id: 'reduxjs.redux',
@@ -77,6 +81,7 @@ export default [
     votesCount: 0,
     ownerAvatarUrl: 'https://avatars3.githubusercontent.com/u/13142323?v=4',
     views: 300,
-    answers: 10
+    answers: 10,
+    creationDate: '2 months'
   }
 ]

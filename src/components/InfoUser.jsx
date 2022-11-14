@@ -6,13 +6,12 @@ import StyledText from './StyledText.jsx'
 const UserInfo = props => {
   return (
     <View style={{ flexDirection: 'row-reverse', padding:10}}>
-                <View style={{ padding:5 }}>
-            <StyledText color='secondary'>{props.fullName}</StyledText>
+        <View style={{ padding:5 }}>
+          <StyledText color='secondary'>{props.fullName}</StyledText>
         </View>
         <View style={{ paddingRight: 1 }}>
-        <Image style={styles.image} source={{ uri: props.ownerAvatarUrl }} />
+          <Image style={styles.image} source={{ uri: props.ownerAvatarUrl }} />
         </View>
-
     </View>
   )
 }
