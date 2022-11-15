@@ -4,7 +4,7 @@ import questions from '../data/questions.js'
 import QuestionItem from './QuestionItem.jsx'
 
 
-export default function QuestionsList(props) {
+export default function QuestionsList() {
   return (
     <FlatList
       data={questions}

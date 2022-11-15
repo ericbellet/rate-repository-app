@@ -10,8 +10,7 @@ export default function AnswerStats(props) {
     const navigation = useNavigation();
   
     const goToAnswer = () => {
-      //console.log(answer.question)
-      //navigation.navigate('Answers', props={...question})
+      navigation.navigate('AnswerItem', props={...answer})
     };
   
     return (
@@ -21,7 +20,6 @@ export default function AnswerStats(props) {
           <AnswerStatsView {...answer}/>
         </View>
       </TouchableWithoutFeedback>
-  
     )
   }
 
@@ -68,8 +66,8 @@ export default function AnswerStats(props) {
   const styles = StyleSheet.create({
     image: {
       marginVertical: 4,
-      width: 30,
-        height: 30,
+      width: 35,
+        height: 35,
         borderRadius: 4
       },
     container: {

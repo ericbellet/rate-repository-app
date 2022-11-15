@@ -13,6 +13,10 @@ export default function AnswersScreen(props) {
     route: { params },
   } = props;
 
+  const goToAnswerCreation = () => {
+    navigation.navigate('AnswerCreation', props={...params})
+  };
+
   return <View>
     <View style={styles.container}>
       <Text style={styles.text}>{params.question}</Text>
@@ -23,13 +27,12 @@ export default function AnswersScreen(props) {
       </View>
       <Text color='secondary'>Asked {params.creationDate} ago</Text>
     </View>
-    <TouchableWithoutFeedback onPress={() => console.log('To do create answer')}>
+    <TouchableWithoutFeedback onPress={(goToAnswerCreation)}>
       <View style={styles.containerCreateAnswer}>
         <Icon
         name="plus"
         color="gray"
         size={40}
-
         />
       </View>
     </TouchableWithoutFeedback>
@@ -52,7 +55,7 @@ const styles = StyleSheet.create({
   },
   containerCreateAnswer: {
     padding: 20,
-    paddingVertical: 5,
+    paddingVertical: 20,
     paddingHorizontal: 160,
     borderBottomColor: 'gray',
     borderBottomWidth: StyleSheet.hairlineWidth

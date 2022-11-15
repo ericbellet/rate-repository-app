@@ -4,7 +4,11 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import LandingScreen from './src/screens/LandingScreen'
 import HomeScreen from './src/screens/HomeScreen'
-import Answers from './src/screens/AnswersScreen'
+import AnswersScreen from './src/screens/AnswersScreen'
+import AnswerCreationScreen from './src/screens/AnswerCreationScreen';
+import AnswerItemScreen from './src/screens/AnswerItemScreen';
+import ResourcesScreen from './src/screens/ResourcesScreen';
+
 
 
 const Stack = createNativeStackNavigator();
@@ -15,7 +19,10 @@ function App() {
       <Stack.Navigator>
         <Stack.Screen name="Sign In" component={LandingScreen} />
         <Stack.Screen name="Home" component={HomeScreen} />
-        <Stack.Screen name="Answers" component={Answers} />
+        <Stack.Screen name="Answers" component={AnswersScreen} />
+        <Stack.Screen name="AnswerCreation" component={AnswerCreationScreen} options={{ title: 'Post Your Answer' }}/>
+        <Stack.Screen name="AnswerItem" component={AnswerItemScreen} options={{ title: 'Answer' }}/>
+        <Stack.Screen name="Resources" component={ResourcesScreen} options={{ title: 'Resources' }}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
