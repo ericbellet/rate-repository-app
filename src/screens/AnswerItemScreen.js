@@ -7,7 +7,6 @@ import AnswerItem from '../components/AnswerItem.jsx';
 
 
 export default function AnswerItemScreen(props) {
-
     const {
         navigation,
         route: { params },

@@ -11,7 +11,6 @@ export default function AnswerCreationScreen(props) {
         route: { params },
       } = props;
 
-    console.log(params)
     return (
         <View style={styles.container}>
             <Text style={styles.text}>{params.question}</Text>

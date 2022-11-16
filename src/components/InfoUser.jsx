@@ -7,7 +7,7 @@ const UserInfo = props => {
   return (
     <View style={{ flexDirection: 'row-reverse', padding:10}}>
         <View style={{ padding:5 }}>
-          <StyledText color='secondary'>{props.fullName}</StyledText>
+          <StyledText color='secondary'>{props.username}</StyledText>
         </View>
         <View style={{ paddingRight: 1 }}>
           <Image style={styles.image} source={{ uri: props.ownerAvatarUrl }} />

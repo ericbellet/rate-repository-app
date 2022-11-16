@@ -21,7 +21,7 @@ function App() {
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="Answers" component={AnswersScreen} />
         <Stack.Screen name="AnswerCreation" component={AnswerCreationScreen} options={{ title: 'Post Your Answer' }}/>
-        <Stack.Screen name="AnswerItem" component={AnswerItemScreen} options={{ title: 'Answer' }}/>
+        <Stack.Screen name="AnswerItem" component={AnswerItemScreen} options={{ title: 'Steps' }}/>
         <Stack.Screen name="Resources" component={ResourcesScreen} options={{ title: 'Resources' }}/>
       </Stack.Navigator>
     </NavigationContainer>

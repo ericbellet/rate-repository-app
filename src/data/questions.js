@@ -2,7 +2,7 @@ export default [
   {
     id: 'midudev.midu.dev',
     question: "How to learn English?",
-    fullName: 'midudev/midu.dev',
+    username: 'midudev/midu.dev',
     typeQuestion: 'Deep Path',
     price: 'Free',
     description: 'Blog de noticias sobre desarrollo',
@@ -18,7 +18,7 @@ export default [
   },
   {
     id: 'jaredpalmer.formik',
-    fullName: 'jaredpalmer/formik',
+    username: 'jaredpalmer/formik',
     typeQuestion: 'Deep Path',
     price: '<20$',
     question: "How to handstand?",
@@ -35,7 +35,7 @@ export default [
   },
   {
     id: 'rails.rails',
-    fullName: 'rails/rails',
+    username: 'rails/rails',
     question: "How to learn Python?",
     typeQuestion: 'Fast Path',
     price: 'Free',
@@ -48,11 +48,11 @@ export default [
     ownerAvatarUrl: 'https://avatars1.githubusercontent.com/u/4223?v=4',
     views: 300,
     answers: 10,
-    creationDate: '7 hours'
+    creationDate: '2 hours'
   },
   {
     id: 'django.django',
-    fullName: 'django/django',
+    username: 'django/django',
     question: 'How do you start climbing?',
     typeQuestion: 'Average Path',
     price: '50-300$',
@@ -69,7 +69,7 @@ export default [
   },
   {
     id: 'reduxjs.redux',
-    fullName: 'reduxjs/redux',
+    username: 'reduxjs/redux',
     question: 'How to learn anything?',
     typeQuestion: 'Deep Path',
     price: '300-5000$',
