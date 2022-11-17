@@ -32,8 +32,8 @@ export default function ResourcesScreen(props) {
           <Image
             source={require("../../assets/post.png")}
             style={{ width: 60, height: 60, position: 'relative',
-            bottom:-290,
-            right:-290 }}
+            right:-280,
+            marginTop:60 }}
           />
         </TouchableWithoutFeedback>
       </View>
