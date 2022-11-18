@@ -11,7 +11,7 @@ const Tab = createBottomTabNavigator();
 export default function Navigation() {
 
   return (
-    <Tab.Navigator initialRouteName="QuestionsScreen" screenOptions={{ headerShown: false 
+    <Tab.Navigator labeled={false} name='test' initialRouteName="QuestionsScreen" screenOptions={{ headerShown: false 
   }} >
       <Tab.Screen
         name="AskScreen"

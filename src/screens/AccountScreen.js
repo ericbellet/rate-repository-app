@@ -4,21 +4,20 @@ import useAuth from "../hooks/useAuth";
 import LoginWithEmailScreen from "./LogWithEmailScreen";
 
 export default function AccountScreen() {
-  const { auth } = useAuth();
-  console.log(auth);
+  const { auth, logout} = useAuth();
   return (
     <View>{auth ? 
       <View style={styles.content}>
         <View style={styles.titleBlock}>
-          <Text style={styles.title}>{'Eric Bellet'}</Text>
+          <Text style={styles.title}>{`${auth.firstName} ${auth.lastName}`}</Text>
         </View>
 
         <View style={styles.dataContent}>
-          <ItemMenu title="Username" text={'ericbellet'} />
-          <ItemMenu title="Email" text={'ericbellet'} />
+          <ItemMenu title="Username" text={auth.username} />
+          <ItemMenu title="Email" text={auth.email} />
           <ItemMenu title="Total favorites questions" text={`0 questions`} />
         </View>
-        <Button title="Sign out" onPress={() => console.log("To do")} style={styles.btnLogoun} />
+        <Button title="Sign out" onPress={logout} style={styles.btnLogoun} />
       </View>
       :<LoginWithEmailScreen/>}
     </View>

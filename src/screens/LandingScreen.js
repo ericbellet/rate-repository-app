@@ -2,9 +2,11 @@ import React from "react";
 import { ImageBackground, TouchableOpacity, View, Text, TextInput, StyleSheet, Linking } from "react-native";
 import { FontAwesome5 } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
+import useAuth from "../hooks/useAuth";
 
 
 export default function LandingScreen({ navigation }) {
+    const { auth, logout} = useAuth();
 
     return (
       <ImageBackground style={ styles.imgBackground } 

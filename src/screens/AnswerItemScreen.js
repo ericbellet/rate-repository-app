@@ -13,6 +13,7 @@ export default function AnswerItemScreen(props) {
       } = props;
     return (
         <View>
+            <StyledText style={styles.title}>{params.question}</StyledText>  
             <View style={styles.containerMain}> 
             <View style={styles.container}>
                 <View style={{ paddingRight: 1 }}>
@@ -74,8 +75,8 @@ const styles = StyleSheet.create({
     },
     image: {
       marginVertical: 4,
-      width: 40,
-        height: 40,
+      width: 30,
+        height: 30,
         borderRadius: 4
       },
     container: {
@@ -84,7 +85,13 @@ const styles = StyleSheet.create({
       flexDirection: 'row'
     },
     text: {
-      fontSize: 25,
+      fontSize: 20,
       fontWeight: "bold"
+    },
+    title: {
+      fontSize: 30,
+      fontWeight: "bold",
+      paddingTop:10,
+      paddingLeft: 15
     }
   })
